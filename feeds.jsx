@@ -1,4 +1,8 @@
 /** @jsx React.DOM */
+componentWillMount: function() {
+  this.bindAsArray(new Firebase("https://scorching-torch-5233.firebaseio.com/#-JZ4foZ85tNd1tXiuUod|9887891b0a085c376c5e34e35b472698.firebaseio.com/items/"), "items");
+}
+
 var FeedList = React.createClass({
 	render: function() {
 		var createItem = function(itemText,itemAuteur) {
